@@ -1,0 +1,34 @@
+Console.WriteLine("Enter the first number:");
+int getNumber1=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("number entered is:" + getNumber1);
+Console.WriteLine("Enter the second number");
+int getNumber2=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("number entered is:" + getNumber2);
+Console.WriteLine("Enter the sign to perform the calculation *,-,+,/");
+string operatorSign=Console.ReadLine();
+if (operatorSign == "*")
+{
+    int Answer = getNumber1 * getNumber2;
+    Console.WriteLine("the answer is:" + Answer);
+}
+
+
+else if (operatorSign == "-")
+{
+    int Answer = getNumber1 - getNumber2;
+    Console.WriteLine("the answer is:" + Answer);
+
+}else if (operatorSign == "+")
+{
+    int Answer= getNumber1 + getNumber2;
+    Console.WriteLine("the answer is:" + Answer);
+}
+else if(operatorSign == "/")
+{
+    int Answer = getNumber1 / getNumber2;
+    Console.WriteLine("the answer is:" + Answer);
+}
+else
+{
+    Console.WriteLine("please enter the valid operators");
+}
